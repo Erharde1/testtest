@@ -1,16 +1,16 @@
-# This is a sample Python script.
+#boucle while
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import random
 
+def jeux_devinette():
+    nombre=random.randit(start,end)
+    essai= none
+    while essai != nombre:
+        essai=int(input(f"J'ai choisi un nombre au hasard entre 0 et 1000. À vous de le deviner... \nEntrez votre essai: "))
+        if essai < nombre:
+            print("Mauvais choix, le nombre est plus grand.")
+        elif essai > nombre:
+            print("Maucais choix, le nombre est plus petit.")
+    print("Bravo! Vous avez deviné le chiffre.")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+jeux_devinette(0,1000)
